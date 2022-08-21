@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Book;
+use App\Models\Item;
 use Illuminate\Http\Request;
 
-class BookController extends Controller
+class ItemController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +14,10 @@ class BookController extends Controller
      */
     public function index()
     {
-        $books = Book::where('id', 1)->get();
+        $items = Item::all();
 
         return response()->json([
-            'books' => $books
+            'items' => $items->jsonSerialize()
         ]);
     }
 
