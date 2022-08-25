@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\ConditionController;
 use App\Http\Controllers\ItemController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,9 @@ Route::get('/', function () {
 });
 Route::resource('item', ItemController::class);
 Route::resource('book', BookController::class);
+
+Route::get('/conditions/first', [ConditionController::class, 'first']);
+Route::get('/conditions/second', [ConditionController::class, 'second']);
+Route::get('/conditions/third', [ConditionController::class, 'third']);
+Route::get('/conditions/fourth', [ConditionController::class, 'fourth']);
+Route::get('/conditions/fifth', [ConditionController::class, 'fifth']);
