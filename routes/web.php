@@ -5,6 +5,7 @@ use App\Http\Controllers\BookController;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\ArrayController;
 use App\Http\Controllers\LoopingController;
+use App\Http\Controllers\FunctionController;
 use App\Http\Controllers\ConditionController;
 
 /*
@@ -39,3 +40,8 @@ Route::get('/looping/first', [LoopingController::class, 'first']);
 Route::get('/looping/second', [LoopingController::class, 'second']);
 Route::get('/looping/third', [LoopingController::class, 'third']);
 Route::get('/looping/fourth', [LoopingController::class, 'fourth']);
+
+Route::get('/functions/first', [FunctionController::class, 'first']);
+Route::get('/functions/second', [FunctionController::class, 'second']);
+Route::get('/functions/third', [FunctionController::class, 'third']);
+Route::get('/functions/fourth', [FunctionController::class, 'fourth']);
