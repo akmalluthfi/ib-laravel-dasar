@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArrayController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\ConditionController;
 use App\Http\Controllers\ItemController;
@@ -27,3 +28,8 @@ Route::get('/conditions/second', [ConditionController::class, 'second']);
 Route::get('/conditions/third', [ConditionController::class, 'third']);
 Route::get('/conditions/fourth', [ConditionController::class, 'fourth']);
 Route::get('/conditions/fifth', [ConditionController::class, 'fifth']);
+
+Route::get('/array/first', [ArrayController::class, 'first']);
+Route::get('/array/second', [ArrayController::class, 'second']);
+Route::get('/array/third', [ArrayController::class, 'third']);
+Route::get('/array/fourth', [ArrayController::class, 'fourth']);
