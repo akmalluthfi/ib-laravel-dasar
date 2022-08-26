@@ -7,6 +7,7 @@ use App\Http\Controllers\ArrayController;
 use App\Http\Controllers\LoopingController;
 use App\Http\Controllers\FunctionController;
 use App\Http\Controllers\ConditionController;
+use App\Http\Controllers\TaskController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,3 +47,5 @@ Route::get('/functions/second', [FunctionController::class, 'second']);
 Route::get('/functions/third', [FunctionController::class, 'third']);
 Route::get('/functions/fourth', [FunctionController::class, 'fourth']);
 Route::get('/functions/fifth', [FunctionController::class, 'fifth']);
+
+Route::get('/tasks/basicPHP', [TaskController::class, 'basicPHP']);
