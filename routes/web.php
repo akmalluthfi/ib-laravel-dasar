@@ -45,3 +45,4 @@ Route::get('/functions/first', [FunctionController::class, 'first']);
 Route::get('/functions/second', [FunctionController::class, 'second']);
 Route::get('/functions/third', [FunctionController::class, 'third']);
 Route::get('/functions/fourth', [FunctionController::class, 'fourth']);
+Route::get('/functions/fifth', [FunctionController::class, 'fifth']);

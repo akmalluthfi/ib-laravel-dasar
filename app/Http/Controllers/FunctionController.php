@@ -87,4 +87,18 @@ class FunctionController extends Controller
 
         return $result;
     }
+
+    public function fifth()
+    {
+        dd($this->recursive(5));
+    }
+
+    public function recursive(int $n)
+    {
+        if ($n > 0) {
+            return $n * $this->recursive($n - 1);
+        } else {
+            return 1;
+        }
+    }
 }
